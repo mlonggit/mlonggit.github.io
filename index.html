@@ -542,22 +542,30 @@
                 </div>      
                 <div class="col-xl-6 mb-5"> 
                   <div class="tm-contact-form-wrap">
-                    <form action="" method="POST" class="tm-contact-form">
+                    <form id="my-form" action="https://formspree.io/f/xbjqjbyq" method="POST" class="tm-contact-form">
+
+                      <input type="hidden" name="_subject" value="Contact request from  mlong website" />
                         <div class="form-group">
-                          <input type="text" id="contact_name" name="contact_name" class="form-control rounded-0 border-top-0 border-right-0 border-left-0" placeholder="Your Name" required="" />
+                          <input type="text" id="_name" name="_name" class="form-control rounded-0 border-top-0 border-right-0 border-left-0" placeholder="Your Name" required="" />
                         </div>
                         <div class="form-group">
-                          <input type="email" id="contact_email" name="contact_email" class="form-control rounded-0 border-top-0 border-right-0 border-left-0" placeholder="Your Email" required="" />
+                          <input type="email" id="_replyto" name="_replyto" class="form-control rounded-0 border-top-0 border-right-0 border-left-0" placeholder="Your Email" required="" />
                         </div>
                 
                         <div class="form-group">
-                          <textarea rows="4" id="contact_message" name="contact_message" class="form-control rounded-0 border-top-0 border-right-0 border-left-0" placeholder="Message..." required=""></textarea>
+                          <textarea rows="4" id="_message" name="_message" class="form-control rounded-0 border-top-0 border-right-0 border-left-0" placeholder="Message..." required=""></textarea>
                         </div>
                 
                         <div class="form-group mb-0">
-                          <button type="submit" class="btn rounded-0 d-block ml-auto tm-btn-primary">
+                          <button type=submit id="my-form-button" class="btn rounded-0 d-block ml-auto tm-btn-primary">
                             SEND
                           </button>
+                          <br>
+                          <p id="my-form-status"></p>
+
+                          <button type="reset" onclick="resetFunc()" class="btn rounded-0 d-block ml-auto tm-btn-primary">
+                            Clear Message
+                          </button> 
                         </div>
                       </form>
                   </div>                    
@@ -568,6 +576,48 @@
         </main>        
       </div>
     </div>
+
+    <script>
+      var form = document.getElementById("my-form");
+      
+      async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        status.innerHTML = "Thanks for your submission!";
+        form.reset()
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+
+  </script>
+   
+  <script>
+    function resetFunc(){
+      // alert("reset");
+      // document.getElementById("my-form").reset();
+        var status = document.getElementById("my-form-status");
+        status.innerHTML="";
+        console.log("im here");
+    }
+
+    var dt = new Date();
+    var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+    // document.write(time);
+    document.getElementById("ctime").innerHTML = time;
+  </script>
+
+
+
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.singlePageNav.min.js"></script>
     <script src="js/parallax.min.js"></script>
