@@ -171,7 +171,7 @@
                                 <div class="mb-2" style="width: 300px; height: 300px;">
                                   <img class="w-100" src="img/mikelong.png" alt="mike">
                                 </div>
-
+                              
                                 <p>
                                   <strong>Techincal Skills:</strong>
                                   <span class="badge badge-info">ASP.NET CORE</span>
@@ -647,13 +647,12 @@
                         <!-- <br><br> -->
                         <p class="" id="my-form-status"></p>
 
-
-                        
                         <div id="showmsg" class="alert alert-success alert-dismissible" style="display:none;">
-                          <button type="button" class="close" data-dismiss="alert">×</button>
+                          <button type="button" class="close" data-dismiss="alert">
+                            <span style="font-size: x-large;color:red">x</span>
+                          </button>
                           <strong>Success!</strong> Thanks for your submission!.
                         </div>
-
 
 
 
@@ -702,9 +701,12 @@
 
   <script>
 
+
     function displayDate(){
-          document.getElementById("my-form-status").innerHTML = Date();
-      }
+      document.getElementById("my-form-status").innerHTML = Date();
+    }
+
+
 
     function resetFunc(){
         // alert("reset");
