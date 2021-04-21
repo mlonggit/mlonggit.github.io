@@ -646,6 +646,17 @@
                         </div>
                         <!-- <br><br> -->
                         <p class="" id="my-form-status"></p>
+
+
+                        
+                        <div id="showmsg" class="alert alert-success alert-dismissible" style="display:none;">
+                          <button type="button" class="close" data-dismiss="alert">×</button>
+                          <strong>Success!</strong> Thanks for your submission!.
+                        </div>
+
+
+
+
                       </form>
                   </div>                    
                 </div>
@@ -671,8 +682,16 @@
             'Accept': 'application/json'
         }
       }).then(response => {
-        status.innerHTML = "Thanks for your submission!";
+        // status.innerHTML = "Thanks for your submission!";
         form.reset()
+
+          // displayDate();
+          document.getElementById("showmsg").style.display = "block";
+       
+    
+
+
+
       }).catch(error => {
         status.innerHTML = "Oops! There was a problem submitting your form"
       });
@@ -682,6 +701,11 @@
   </script>
 
   <script>
+
+    function displayDate(){
+          document.getElementById("my-form-status").innerHTML = Date();
+      }
+
     function resetFunc(){
         // alert("reset");
         // document.getElementById("my-form").reset();
