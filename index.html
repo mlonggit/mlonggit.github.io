@@ -62,13 +62,17 @@
                     <span class="d-inline-block tm-white-rect"></span>
                   </a>
                 </li>
+
                 <li class="nav-item">
                   <a href="#talk" class="nav-link">
                     <span class="d-inline-block mr-3">Contact</span>
                     <span class="d-inline-block tm-white-rect"></span>
                   </a>
                 </li>
-                <!-- <li class="nav-item">
+               
+                
+
+                <!-- <li class="nav-item"> 
                   <a href="#download" class="nav-link">
                     <span class="d-inline-block mr-3">Resume</span>
                     <span class="d-inline-block tm-white-rect"></span>
@@ -99,7 +103,7 @@
                 </li>
               </ul>
               <footer class="text-center text-white small">
-                <p class="mb--0 mb-2">Copyright 2021(Ver 4.3.1)</p>
+                <p class="mb--0 mb-2">Copyright 2021(Ver 4.3.2)</p>
                 <p id="ctime"></p>
                 <!-- <p class="mb-0">Design:
                   <a rel="nofollow" href="https://templatemo.com" class="tm-footer-link">Template Mo</a>
@@ -148,7 +152,8 @@
                     <!-- <div  class="col-lg-4" style="border:0px solid rgba(0, 0, 0, 0.3);"> -->
                       <!-- <i class="fas fa-6x fa-balance-scale mb-5 tm-section-icon"> </i> -->
                     <!-- </div> -->
-                    <div class="col-lg-8">   
+                    <div class="col-lg-8"> 
+                      <i class="fas fa-user-tie" style="font-size: 24px; color:grey;" ></i>    
                       <a href="#aboutme" class="tm-section-title tm-color-primary mb-5" data-toggle="collapse">About Me</a>
                     </div>                         
                   </div>
@@ -173,6 +178,7 @@
                                 </div>
                               
                                 <p>
+                                  <i class="fas fa-id-badge"></i>
                                   <strong>Techincal Skills:</strong>
                                   <span class="badge badge-info">ASP.NET CORE</span>
                                   <span class="badge badge-info">C#</span>
@@ -208,15 +214,20 @@
                                     Let me know if you need additional info or have any other questions.
                                   </p>
                                   <p>
-                                  Regards,<br>
-                                  Mike Long <br>
-                                  Mobile: <b>347.556.9262</b><br>
-                                  Email: <a href="mailto:mcklong@hotmail.com">mcklong@hotmail.com</a> 
-                                   
-                                </p>
-                                <br>
-                                <hr style="width: 80%;"/>
-                                <strong>Download</strong>
+                                    Regards,<br>
+                                  
+                                    Mike Long <br>
+                                    <i class='fas fa-mobile' style='font-size:18px;color:grey'></i>
+                                    Mobile: <b>347.556.9262</b><br>
+                                    <i class="fa fa-envelope"></i> 
+                                    Email: <a href="mailto:mcklong@hotmail.com">mcklong@hotmail.com</a> 
+                                     
+                                  </p>
+                             
+                                  <br>
+                                  <hr style="width: 80%;"/>
+                                  <i class="fas fa-download"></i>
+                                  <strong>Download</strong>
                                 <p><a href="resume/Mike Long Resume1.doc" download>Resume in Word format</a></p>
                                 <p><a href="resume/Mike Long Resume1.pdf" download>Resume in PDF format</a></p>
                       
@@ -254,6 +265,7 @@
                 <hr style="width: 50%;"/>
 
                 <div class="tm-section-half">
+                  <i class="fas fa-file-word" style="font-size: 22px; color:grey;"></i>
                     <a href="#resume" class="tm-section-title tm-color-primary mb-5" data-toggle="collapse">Resume</a>
 
                     <!-- <p class="mb-5"> -->
@@ -529,74 +541,141 @@
           </div>
           
           <!-- PROJECTS -->
-          <div class="tm-section-wrap bg-white">
-            <section id="projects" class="row tm-section">
-              <div class="col-12 tm-section-pad"><hr/>
-                  <div class="tm-flex-item-left">
-                      <div class="tm-w-80">
-                          <!-- <h2 class="tm-color-primary tm-section-title mb-4">my-Projects</h2> -->
-                          <a href="#myprojects" class="tm-color-primary tm-section-title mb-4" data-toggle="collapse">Projects</a>
+            <!-- begin TAB -->
+            <div class="tm-section-wrap bg-white">
+              <section id="projects" class="row tm-section">
+                <div class="col-12 tm-section-pad"><hr/>
+                    <div class="tm-flex-item-left">
+                        <div class="tm-w-80">
+                           
+                            <a href="#projtab" class="tm-color-primary tm-section-title mb-4" data-toggle="collapse">
+                              <i class='fas fa-project-diagram' style='font-size:24px;color:lightblue'></i>
+                              Projects
+                            </a>
+                            <p class="mb-0">
+                               Some projects I am working on.... 
+                               <!-- <i class="fas fa-pencil-ruler" style="font-size: 16px; color:lightblue"></i> -->
+                               <i class="fas fa-too fa-tools" style="font-size: 16px; color:lightblue"></i>
+        
+                            </p>
 
-                          <p class="mb-5">
-                            Some projects I am working on.... 
-                          </p>
-                      </div>
-                      <div id="myprojects" class="col-xl-12 collapse show">
+                        </div>
+                        <div id="projtab" class="col-xl-12 collapse">
+  
+                          <!-- -------https://www.w3schools.com/bootstrap4/bootstrap_ref_js_tab.asp----------- -->
+                          <br>
+                          <!-- Nav tabs -->
+                          <ul class="nav nav-tabs" role="tablist p-1">
+                            <li class="nav-item">
+                              <a class="nav-link" data-toggle="tab" href="#menu1">
+                                <i class="fab fa-skyatlas"></i> Azure</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-toggle="tab" href="#menu2">
+                                <i class='far fa-file-code' style="font-size: 18px;"></i> ASP.NET Core</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-toggle="tab" href="#menu3">
+                                <i class='fas fa-bezier-curve' style='font-size:18px;color:grey'></i>
+                                ASP.NET MVC
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-toggle="tab" href="#menu4">
+                                <i class='fas fa-code' style='font-size:18px;color:grey'></i>
+                                Web API</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-toggle="tab" href="#menu5">
+                                <i class='fas fa-vector-square' style='font-size:18px;color:grey'></i>
+                                Javascripts</a>
+                            </li>
+                          </ul>
 
-                     
-                      <div class="row tm-clients-images">
-                        <div class="col-xl-3 col-lg-6 col-md-4 col-sm-6 tm-img-wrap">
-                        <a href="https://azuremvctrucksdemo20210404140421.azurewebsites.net/" target="_blank">
-                            <img src="img/TruckApp.png" alt="Project Image" class="img-fluid tm-client-img" />
-                          </a>                        
-                        </div>
-                        <div class="col-xl-3 col-lg-6 col-md-4 col-sm-6 tm-img-wrap">
-                          <a href="https://lively-forest-0aad48b10.azurestaticapps.net/" target="_blank">
-                            <img src="img/under-construction.png" alt="Client Image" class="img-fluid tm-client-img" />
-                          </a>                          
-                        </div>
-                        <div class="col-xl-3 col-lg-6 col-md-4 col-sm-6 tm-img-wrap">
-                          <a href="#">
-                            <img src="img/underconstruction.png" alt="Client Image" class="img-fluid tm-client-img" />
-                          </a>                          
-                        </div>
-                        <div class="col-xl-3 col-lg-6 col-md-4 col-sm-6 tm-img-wrap">
-                          <a>
-                            <img src="img/underconstruction.png" alt="Client Image" class="img-fluid tm-client-img" />
-                          </a>                          
-                        </div>
-                        <div class="col-xl-3 col-lg-6 col-md-4 col-sm-6 tm-img-wrap">
-                            <a>
-                              <img src="img/underconstruction.png" alt="Client Image" class="img-fluid tm-client-img" />
-                            </a>                          
-                          </div>
-                          <div class="col-xl-3 col-lg-6 col-md-4 col-sm-6 tm-img-wrap">
-                            <a>
-                              <img src="img/underconstruction.png" alt="Client Image" class="img-fluid tm-client-img" />
-                            </a>                          
-                          </div>
-                          <div class="col-xl-3 col-lg-6 col-md-4 col-sm-6 tm-img-wrap">
-                            <a>
-                              <img src="img/underconstruction.png" alt="Client Image" class="img-fluid tm-client-img" />
-                            </a>                          
-                          </div>
-                          <div class="col-xl-3 col-lg-6 col-md-4 col-sm-6 tm-img-wrap">
-                            <a>
-                              <img src="img/underconstruction.png" alt="Client Image" class="img-fluid tm-client-img" />
-                            </a>                          
-                          </div>
-                          <div class="col-xl-3 col-lg-6 col-md-4 col-sm-6 tm-img-wrap">
-                            <a>
-                              <img src="img/underconstruction.png" alt="Client Image" class="img-fluid tm-client-img" />
-                            </a>                          
-                          </div>
-                      </div>
-                    </div><!-- collapse-->
-                  </div> 
-              </div>                             
-            </section>
-          </div>
-            <!-- END PROJECTS -->
+                          <!-- Tab panes -->
+                          <div class="tab-content">
+                            <div id="menu1" class="container tab-pane active"><br>
+                              <h4 >
+                                <i class="fa fa-cloud" style="font-size: 24;color:lightskyblue;">
+                                Azure projects</i>
+                              </h4>
+                              <p>
+                                <!-- ... -->
+                                <div class="row tm-clients-images">
+                                  <div class="col-xl-3 col-lg-6 col-md-4 col-sm-6 tm-img-wrap">
+                                  <a href="https://azuremvctrucksdemo20210404140421.azurewebsites.net/" target="_blank">
+                                      <img src="img/TruckApp.png" alt="Project Image" class="img-fluid tm-client-img" />
+                                    </a>                        
+                                  </div>
+                                  <div class="col-xl-3 col-lg-6 col-md-4 col-sm-6 tm-img-wrap">
+                                    <a href="https://lively-forest-0aad48b10.azurestaticapps.net/" target="_blank">
+                                      <img src="img/under-construction.png" alt="Client Image" class="img-fluid tm-client-img" />
+                                    </a>                          
+                                  </div>
+                                  <div class="col-xl-3 col-lg-6 col-md-4 col-sm-6 tm-img-wrap">
+                                    <a href="#">
+                                      <img src="img/underconstruction.png" alt="Client Image" class="img-fluid tm-client-img" />
+                                    </a>                          
+                                  </div>
+                                  <div class="col-xl-3 col-lg-6 col-md-4 col-sm-6 tm-img-wrap">
+                                    <a>
+                                      <img src="img/underconstruction.png" alt="Client Image" class="img-fluid tm-client-img" />
+                                    </a>                          
+                                  </div>
+                                </div>
+                              </p>
+
+                            </div> <!--end menu1-->
+
+
+                            <div id="menu2" class="container tab-pane fade"><br>
+                              <p>
+                                <i class='far fa-file-code' style="font-size: 24px;color:mediumaquamarine">
+                                  <span style="font-size: 16px;">.NET CORE PROJECTS</span>
+                                </i>
+                             
+                              </p>
+                              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div> <!--end menu2-->
+                            
+                            <div id="menu3" class="container tab-pane fade"><br>
+                              <p>
+                                <i class='fas fa-bezier-curve' style='font-size:18px;color:grey'>
+                                  ASP.NET Web Application (.Net Framework) 
+                                </i>
+                              </p>
+                              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                            </div> <!--end menu3-->
+                            
+                            <div id="menu4" class="container tab-pane fade"><br>
+                              <p>
+                                <i class='fas fa-code' style='font-size:18px;color:lightblue'>
+                                MVC/Web API
+                               </i>
+                              </p>
+                              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                            </div><!--end menu4-->
+
+                        
+                            <div id="menu5" class="container tab-pane fade"><br>
+                              <p>
+                                <i class='fas fa-vector-square' style='font-size:18px;color:lightslategray'>
+                                Javascripts project
+                              </i>
+                              </p>
+                              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                            </div> <!--end menu5-->
+
+                          </div> <!--end tab content-->
+                          <!-- -------------------------- -->
+
+                        </div><!-- collapse-->
+                      </div> 
+                    </div>                             
+                  </section>
+                </div>
+            <!-- end TAB -->
+            <!-- END PROJECTS old-->
 
             <!-- CONTACT ME -->
             
@@ -607,14 +686,19 @@
                  
                   <div class="tm-double-border-1 tm-border-gray">
                     <div class="tm-double-border-2 tm-border-gray tm-box-pad">
-                        <h2 class="tm-color-primary tm-section-title mb-4">Talk to me</h2>
-                        <p class="mb-4">
+                      <h2 class="tm-color-primary tm-section-title mb-4">
+                        <i class="fa fa-comments"></i>
+                        Talk to me</h2> 
+                      <p class="mb-4">
+                        <i class="fas fa-address-card"></i>
                           Mike Long<br>
                           144-54 Sanford Ave. # 10<br>
                           Flushing, NY 11355
                         </p>
                         <p class="mb-3">
+                          <i class='fas fa-mobile' style='font-size:18px;color:grey'></i>
                           Mobile: <b>347.556.9262</b><br>
+                          <i class="fa fa-envelope"></i>
                           Email: <a href="mailto:mcklong@hotmail.com">mcklong@hotmail.com</a> <br>
                         </p>
                     </div>                    
@@ -672,6 +756,8 @@
       </div>
     </div>
   
+
+
   <script>
       var form = document.getElementById("my-form");
       
@@ -691,6 +777,9 @@
 
         // displayDate();
         document.getElementById("showmsg").style.display = "block";
+
+        // Vanish in 3 seconds
+      setTimeout(() => document.querySelector('.alert').remove(), 3000);
        
         // alert("test");
         // Prevent the page from redirecting to the action attribute.
@@ -705,7 +794,7 @@
   </script>
 
   <script>
-
+  
 
     function displayDate(){
       document.getElementById("my-form-status").innerHTML = Date();
